@@ -5,6 +5,8 @@ import { Button, Block, Text, Input } from '../components';
 
 const { height } = Dimensions.get('window');
 
+
+
 class Login extends Component {
   render() {
     const { navigation } = this.props;
@@ -16,14 +18,14 @@ class Login extends Component {
         style={{ flex: 1 }}
         keyboardVerticalOffset={height * 0.2}
       >
-        <Block center left>
+        <Block center left >
    
           <Block flex={2.5} left>
             <Text h3 style={{ marginTop: 20 , fontSize: 37 , marginLeft: -5 ,lineHeight: -0.5}}>
            {"\n"} FIND {"\n"} YOUR {"\n"} ROUTE
             </Text>
-            <Text paragraph color="black3" style={{marginLeft: 5 , marginTop: 15}}>
-            {"\n"}Find The Quickest {"\n"}Most Affordable Route {"\n"}For Your Workday Commute
+            <Text paragraph color="black3" style={{marginLeft: 5 , marginTop: -10}}>
+            {"\n"}Find The Quickest Route {"\n"}For Your Workday Commute
             </Text>
             
             <Block center style={{ marginTop: 44 }}>
@@ -61,7 +63,7 @@ class Login extends Component {
                   height={18}
                   color= 'rgb(1,147,207)'
                   onPress={() => navigation.navigate('Register')}>
-                   {/* Don't have an account? */}
+                   Don't have an account?
                 </Text>
               </Text>
             </Block>
@@ -70,6 +72,9 @@ class Login extends Component {
       </KeyboardAvoidingView>
     )
   }
+
+  
 }
+
 
 export default Login;

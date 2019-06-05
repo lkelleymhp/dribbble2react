@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   overview: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: theme.colors.white,
+    backgroundColor: theme.colors.black,
   },
   margin: {
     marginHorizontal: 25,
@@ -38,7 +38,7 @@ class Overview extends Component {
       <TouchableOpacity><Icon notification /></TouchableOpacity>
     ),
     headerTitle: (
-      <Block row middle><Text h4>Overview</Text></Block>
+      <Block row middle><Text h4>Wallet</Text></Block>
     )
   }
 

@@ -12,6 +12,7 @@ export default class Card extends Component {
     border: true,
     title: null,
     
+    
   }
 
   renderHeader = () => {
