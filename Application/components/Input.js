@@ -42,18 +42,19 @@ export default class Input extends Component {
 
 const styles = StyleSheet.create({
   input: {
-    backgroundColor: theme.colors.input,
+    backgroundColor: theme.colors.white,
     borderWidth: 0.5,
     borderColor: theme.colors.border,
     borderRadius: 5,
     fontSize: theme.sizes.font,
-    color: theme.colors.black,
+    color: theme.colors.white,
     height: 45,
     paddingVertical: 11,
     paddingHorizontal: 16,
   },
   label: {
     textTransform: 'uppercase',
+    color: 'white'
   },
   labelContainer: {
     flexDirection: 'row',

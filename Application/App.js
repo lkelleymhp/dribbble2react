@@ -29,9 +29,7 @@ export default class App extends React.Component {
 
   _loadResourcesAsync = async () => {
     return Promise.all([
-      Asset.loadAsync([
-        require('./assets/images/Base/Logo.png'),
-      ]),
+    
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         // ...Icon.Ionicons.font,
@@ -63,6 +61,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: '#fff',
   },
 });

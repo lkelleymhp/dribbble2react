@@ -14,6 +14,7 @@ const colors = {
   gray: '#BFC5D2',
   gray2: '#F4F6FC',
   gray3: '#EEF3F5',
+  gray4: '#333333',
   caption: '#B0BAC9',
   input: 'rgba(224, 231, 255, 0.20)', // '#E0E7FF' 20%
   border: '#D6DDF6',

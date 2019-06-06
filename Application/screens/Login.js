@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, KeyboardAvoidingView, Dimensions } from 'react-native';
+import { Image, KeyboardAvoidingView, Dimensions, StyleSheet } from 'react-native';
 
 import { Button, Block, Text, Input } from '../components';
 
@@ -12,19 +12,20 @@ class Login extends Component {
     const { navigation } = this.props;
 
     return (
-      <KeyboardAvoidingView
+      <KeyboardAvoidingView 
         enabled
         behavior="padding"
-        style={{ flex: 1 }}
+        style={{ flex: 1, backgroundColor: 'black' }}
         keyboardVerticalOffset={height * 0.2}
       >
         <Block center left >
    
-          <Block flex={2.5} left>
-            <Text h3 style={{ marginTop: 20 , fontSize: 37 , marginLeft: -5 ,lineHeight: -0.5}}>
+          <Block flex={2.5} left style={[styles.back]}>
+            <Text h3 style={{ marginTop: 20 , fontSize: 37 , marginLeft: -5 ,
+              color: 'white',lineHeight: -0.5}}>
            {"\n"} FIND {"\n"} YOUR {"\n"} ROUTE
             </Text>
-            <Text paragraph color="black3" style={{marginLeft: 5 , marginTop: -10}}>
+            <Text paragraph color="white" style={{marginLeft: 5 , marginTop: -10}}>
             {"\n"}Find The Quickest Route {"\n"}For Your Workday Commute
             </Text>
             
@@ -33,24 +34,22 @@ class Login extends Component {
                 full
                 email
                 label="Email address"
-                style={{ marginBottom: 25 }}
+                style={{ marginBottom: 25}}
               />
               <Input
                 full
                 password
                 label="Password"
                 style={{ marginBottom: 25 }}
-                rightLabel={
-                  <Text
+              />
+               <Text
                     paragraph
-                    color="gray"
+                    color="grey"
                     onPress={() => navigation.navigate('Forgot')}
+                    style={{ marginTop: -25 , marginBottom: 25 ,right: -78 }}
                   >
                     Forgot password?
                   </Text>
-                }
-              />
-
               <Button
                 full
                 style={{ marginBottom: 12 }}
@@ -59,9 +58,9 @@ class Login extends Component {
                 <Text button>Log In</Text>
               </Button>
               <Text paragraph color="gray" >
-                 <Text left style={{ marginLeft: 50 }}
+                 <Text  style={{ left: 80 }}
                   height={18}
-                  color= 'rgb(1,147,207)'
+                  color= 'grey'
                   onPress={() => navigation.navigate('Register')}>
                    Don't have an account?
                 </Text>
@@ -72,9 +71,12 @@ class Login extends Component {
       </KeyboardAvoidingView>
     )
   }
-
-  
 }
 
+const styles = StyleSheet.create({
+  back: {
+    backgroundColor: 'black',
+  },
+});
 
 export default Login;

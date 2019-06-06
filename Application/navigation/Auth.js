@@ -12,5 +12,6 @@ export default createStackNavigator({
 }, {
   defaultNavigationOptions: {
     header: null
+    
   }
 });
