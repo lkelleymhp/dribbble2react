@@ -44,7 +44,7 @@ class Overview extends Component {
 
   render() {
     return (
-      <SafeAreaView style={styles.overview}>
+      <SafeAreaView style={styles.overview}> 
         <ScrollView contentContainerStyle={{ paddingVertical: 25 }}>
           <Card row  style={styles.margin}>
             <Block flex={1.2}  style={{ marginRight: 20 }}>

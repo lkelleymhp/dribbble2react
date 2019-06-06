@@ -26,11 +26,11 @@ class Register extends Component {
   
 
     return (
-      <KeyboardAwareScrollView style={{ marginVertical: 40 }} showsVerticalScrollIndicator={false}>
-        <Block center middle style={{ marginBottom: 40, marginTop: 20 }}>
+      <KeyboardAwareScrollView  style={styles.black} style={{ marginVertical: 40 }} showsVerticalScrollIndicator={false}>
+        <Block center middle style={{ marginBottom: 40, marginTop: 20}}>
       
         </Block>
-        <Block flex center>
+        <Block flex center style={{backgroundColor: 'black'}}>
           <Text h3 style={{ marginBottom: 3 , right: 108 }}>
             SIGN UP 
           </Text>
@@ -81,6 +81,11 @@ class Register extends Component {
     )
   }
 }
+const styles = StyleSheet.create({
+  back: {
+    backgroundColor: 'black',
+  },
+});
 
 export default Register;
 

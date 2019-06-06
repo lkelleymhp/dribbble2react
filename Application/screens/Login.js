@@ -58,7 +58,7 @@ class Login extends Component {
                 <Text button>Log In</Text>
               </Button>
               <Text paragraph color="gray" >
-                 <Text  style={{ left: 80 }}
+                 <Text 
                   height={18}
                   color= 'grey'
                   onPress={() => navigation.navigate('Register')}>
