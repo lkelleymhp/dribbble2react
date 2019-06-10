@@ -26,27 +26,21 @@ class Register extends Component {
   
 
     return (
-      <KeyboardAwareScrollView  style={styles.black} style={{ marginVertical: 40 }} showsVerticalScrollIndicator={false}>
-        <Block center middle style={{ marginBottom: 40, marginTop: 20}}>
+      <KeyboardAwareScrollView style={{ marginVertical: 40 }} showsVerticalScrollIndicator={false}>
       
-        </Block>
-        <Block flex center style={{backgroundColor: 'black'}}>
-          <Text h3 style={{ marginBottom: 3 , right: 108 }}>
-            SIGN UP 
+        <Block flex center style={{marginTop: 50}}>
+          <Text h3 style={{ marginBottom: 3, marginTop:50 }}>
+            SIGN UP TO GET STARTED!
+
           </Text>
-          <Text h3 style={{ marginBottom: 3 , marginLeft: -81 }}>
-           TO GET STARTED!
+          <Text h3 style={{ marginBottom: 3 , marginLeft: -89 }}>
           </Text>
           <Text paragraph color="black3" style={{  marginLeft: -40 }}>
-            Free forever. No credit card needed.
+            
           </Text>
 
-          <Block center style={{ marginTop: 25 }}>
-            <Input
-              full
-              label="Full name"
-              style={{ marginBottom: 25 }}
-            />
+          <Block center style={{ marginTop: 65, color: 'black' }}>
+
             <Input
               full
               email
@@ -62,15 +56,15 @@ class Register extends Component {
 
             <Button
               full
-              style={{ marginBottom: 12 }}
-              onPress={() => navigation.navigate('Overview')}
+              style={{ marginTop: 150 }}
+              onPress={() => navigation.navigate('Service')}
             >
               <Text button>Create Account</Text>
             </Button>
-            <Text paragraph color="gray">
+            <Text paragraph color="black">
               Already have an account? <Text
                 height={18}
-                color="blue"
+                color="#0193CF"
                 onPress={() => navigation.navigate('Login')}>
                 Sign in
               </Text>

@@ -4,6 +4,7 @@ const colors = {
   lightblue: 'rgba(46,92,255,0.2)',
   green: '#33AC2E',
   red: '#D63649',
+  red2:'#FF473A',
   yellow: '#F7C137',
   teal: '#00C1D4',
   purple: '#8C54FF',

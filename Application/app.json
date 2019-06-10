@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "velocity",
-    "slug": "velocity",
+    "name": "Routes",
+    "slug": "Routes",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [

@@ -16,20 +16,19 @@ class Login extends Component {
         enabled
         behavior="padding"
         style={{ flex: 1, backgroundColor: 'black' }}
-        keyboardVerticalOffset={height * 0.2}
-      >
-        <Block center left >
+        keyboardVerticalOffset={height * 0.2} >
+        <Block center left style={{ marginTop: 25}} >
    
           <Block flex={2.5} left style={[styles.back]}>
-            <Text h3 style={{ marginTop: 20 , fontSize: 37 , marginLeft: -5 ,
+            <Text h3 style={{ marginTop: 15 , fontSize: 47 , marginLeft: -5 ,
               color: 'white',lineHeight: -0.5}}>
            {"\n"} FIND {"\n"} YOUR {"\n"} ROUTE
             </Text>
-            <Text paragraph color="white" style={{marginLeft: 5 , marginTop: -10}}>
+            <Text paragraph color="white" style={{marginLeft: 5 , marginTop: -10, fontSize: 20}}>
             {"\n"}Find The Quickest Route {"\n"}For Your Workday Commute
             </Text>
             
-            <Block center style={{ marginTop: 44 }}>
+            <Block  style={{ marginTop: 65, color: 'white' }}>
               <Input
                 full
                 email
@@ -43,26 +42,27 @@ class Login extends Component {
                 style={{ marginBottom: 25 }}
               />
                <Text
-                    paragraph
-                    color="grey"
+                    paragraph 
+                    color="white"
                     onPress={() => navigation.navigate('Forgot')}
-                    style={{ marginTop: -25 , marginBottom: 25 ,right: -78 }}
+                    style={{ marginTop: -25 , marginBottom: 25 , textAlign: 'right' , fontSize: 14 }}
                   >
-                    Forgot password?
+                    Forgot Password ?
                   </Text>
               <Button
                 full
-                style={{ marginBottom: 12 }}
+                style={{ marginTop: 50 }}
                 onPress={() => navigation.navigate('Overview')}
               >
                 <Text button>Log In</Text>
               </Button>
-              <Text paragraph color="gray" >
+              <Text paragraph color="gray" style={{ fontSize:14, marginTop: 15}} >
                  <Text 
                   height={18}
-                  color= 'grey'
+                  color= 'white'
+                  
                   onPress={() => navigation.navigate('Register')}>
-                   Don't have an account?
+                   Don't Have An Account?
                 </Text>
               </Text>
             </Block>

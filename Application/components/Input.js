@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   label: {
     textTransform: 'uppercase',
-    color: 'white'
+   
   },
   labelContainer: {
     flexDirection: 'row',

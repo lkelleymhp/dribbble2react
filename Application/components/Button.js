@@ -27,7 +27,7 @@ export default class Button extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: theme.colors.blue2,
+    backgroundColor: theme.colors.red2,
     borderRadius: 4,
     height: 55,
     paddingVertical: 11,
