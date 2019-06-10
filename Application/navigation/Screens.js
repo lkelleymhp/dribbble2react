@@ -1,15 +1,17 @@
 import React from 'react';
 import { createDrawerNavigator } from 'react-navigation';
 
-import OverviewStack from './Overview';
-import Chat from '../screens/Chat';
-import Service from '../screens/Service';
+import Profile from './Overview';
+import Routes from '../screens/Chat';
 import Map from '../screens/Map';
+import Settings from '../screens/Service';
+
 
 export default createDrawerNavigator({
-  OverviewStack,
-  Chat,
-  Service,
+  Profile,
+  Routes,
   Map,
+  Settings,
+ 
 
 });
